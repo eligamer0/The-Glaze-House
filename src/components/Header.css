@@ -1,0 +1,101 @@
+.header {
+    background-image: url('../assets/fondo-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ✅ Menú arriba fijo */
+.navegation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.3); /* opcional */
+}
+
+.logo-nav h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #f179bd;
+}
+.logo-nav h2 span {
+    color: #9d174d;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+
+    position: relative;
+    animation-name: hero-titulo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes hero-titulo {
+    0%      {left: -100%; opacity: 0;}
+    25%     {left: 0%; opacity: 1;}
+    50%     {left: 0%; opacity: 1;}
+    75%     {left: 0%; opacity: 1;}
+    100%    {left: 100%; opacity: 0;}
+}
+
+.hero-text p {
+    font-size: 2rem;
+    margin-top: 10px;
+
+    position: relative;
+    animation-name: hero-parrafo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hero-parrafo {
+    0%      {left: 130%; top:0px; opacity: 0;}
+    25%     {left: 0%; top:0px; opacity: 1;}
+    50%     {left: 0%; top:0px; opacity: 1;}
+    75%     {left: 0%; top:0px; opacity: 1;}
+    100%    {left: -130%; opacity: 0;}
+}
+
+/* ✅ Menú horizontal */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #ffd1dc;
+}
