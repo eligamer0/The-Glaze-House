@@ -15,7 +15,8 @@ body {
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-image: linear-gradient(#90caf9, #64b5f6); 
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

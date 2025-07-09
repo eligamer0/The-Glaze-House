@@ -3,11 +3,11 @@ import Producto from '../components/Producto';
 
 function Home() {
   return (
-    <div>
+    <div className='home'>
       <h1>The Glaze House</h1>
       <p>Descubre nuestras irresistibles donas y postres hechos con amor 🍩✨</p>
 
-      <div>
+      <div className='products-grid'>
         {products.map((item) => (
           <Producto
             key={item.id}
