@@ -1,17 +1,27 @@
-.home {
-    padding: 20px;
-}
+
 .home h1{
-    padding: 20px;
+    padding: 20px 40px;
+    color: #000;
 }
 .home p{
-    padding: 0 20px;
+    padding: 0 40px 20px;
+    color: #000;
+}
+
+.productos {
+    text-align: center;
+    padding: 50px 0;
+    background-image: linear-gradient(#90caf9, #64b5f6);
+}
+.productos h2{
+    font-size: 2.5rem;
+    color: #9d174d;
 }
 
 .products-grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 50px 100px;
+    padding: 30px 180px;
     gap: 20px;
 }
 
@@ -19,17 +29,17 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 .card img {
     background-size: cover;
     width: 100%;
     height: 300px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .card h3 {
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -41,6 +51,69 @@
     padding-left: 10px;
     color: black;
 }
+
+.btn-sweep-to-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 30px;
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+
+  /* Animaciones base */
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition: color 0.3s ease-out;
+}
+
+/* Fondo que barre de izquierda a derecha */
+.btn-sweep-to-right::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1; /* color del barrido */
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease-out;
+}
+
+.btn-sweep-to-right:hover,
+.btn-sweep-to-right:focus,
+.btn-sweep-to-right:active {
+  color: white;
+}
+
+.btn-sweep-to-right:hover::before,
+.btn-sweep-to-right:focus::before,
+.btn-sweep-to-right:active::before {
+  transform: scaleX(1);
+}
+
+/* Animación del ícono hacia la derecha */
+.btn-sweep-to-right .hvr-icon {
+  transform: translateZ(0);
+  transition: transform 0.1s ease-out;
+}
+
+.btn-sweep-to-right:hover .hvr-icon,
+.btn-sweep-to-right:focus .hvr-icon,
+.btn-sweep-to-right:active .hvr-icon {
+  transform: translateX(4px);
+}
+
+
 
 @media (max-width: 768px) {
     .products-grid {
