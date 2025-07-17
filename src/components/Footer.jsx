@@ -13,7 +13,11 @@ function Footer() {
                 </div>
                 <div className='redes'>
                     <a href="#"> <i> <FaWhatsapp size={32} color="#25D366"/> </i> </a>
-                    <a href="#"><span className='instagram-icon'><FaInstagram size={32}/></span></a>
+                    <a href="#"> 
+                        <span className='instagram-icon'>
+                        <FaInstagram size={32}/> 
+                        </span>
+                    </a>
                     <a href="#"> <i> <MdEmail size={32} color='#D44638'/> </i> </a>
                 </div>
             </div>

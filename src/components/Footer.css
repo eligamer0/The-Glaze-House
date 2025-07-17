@@ -18,12 +18,13 @@
 }
 
 .instagram-icon {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    width: 28px;
+    height: 28px;
     background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
-    background-clip: text
-    
+    border-radius: 10px;
 }
-
 
 .footer-cretit {
     display: flex;
