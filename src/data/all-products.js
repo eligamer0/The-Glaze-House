@@ -3,7 +3,7 @@ import donaGlaseada from '../assets/dona-glaseada.jpg';
 const allproducts = [
     {
         id: 1,
-        name: "Dona Glaseada",
+        name: "Dona",
         price: "$45",
         image: donaGlaseada,
         category: "Donas"
@@ -24,6 +24,13 @@ const allproducts = [
     },
     {
         id: 4,
+        name: "Dona Glaseada",
+        price: "$50",
+        image: donaGlaseada,
+        category: "Donas"
+    },
+    {
+        id: 5,
         name: "Dona de Chocolate",
         price: "$50",
         image: donaGlaseada,

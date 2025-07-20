@@ -12,7 +12,6 @@
     overflow: hidden;
 }
 
-/* ✅ Menú arriba fijo */
 .navegation {
     position: absolute;
     top: 0;
@@ -24,7 +23,7 @@
     align-items: center;
 
     padding: 20px 50px;
-    background-color: rgba(0, 0, 0, 0.3); /* opcional */
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .logo-nav h2 {
