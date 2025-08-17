@@ -1,12 +1,29 @@
-# React + Vite
+# The Glaze House 🍩
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web para mostrar tipos de donas y postres.
 
-Currently, two official plugins are available:
+## 🧪 Tecnologías usadas
+- React Vite
+- React Router DOM
+- CSS
+- JavaScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Funcionalidades
+- Navegación por rutas reales
+- Vista de productos
+- Sección de contacto que lleva al footer
 
-## Expanding the ESLint configuration
+## 🚧 Estado
+En desarrollo. Proximamente: carrito de compras y panel de administración.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📷 Capturas
+<img width="1365" height="602" alt="image" src="https://github.com/user-attachments/assets/82a2ec77-d41c-4aac-b99a-df84ded0ae1f" />
+<img width="1364" height="599" alt="image" src="https://github.com/user-attachments/assets/441542e3-e2e0-4c9a-a5fa-b33fa20b30f9" />
+
+
+
+## 🔗 Demo en vivo
+https://legendary-pegasus-3f7bbe.netlify.app/
+
+## 👨‍💻 Autor
+Eliezer Rosario
